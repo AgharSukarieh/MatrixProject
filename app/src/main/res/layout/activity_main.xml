@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/matrix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/liner1">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Enter Elemnt Of Matrix One With space between numbers "
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textview"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:padding="20sp"
+        android:id="@+id/tx1"></TextView>
+
+   <EditText
+       android:layout_width="match_parent"
+       android:layout_height="150dp"
+       android:hint="1 2 3 , 4 5 6"
+       android:layout_marginTop="10dp"
+       android:background="@drawable/ed"
+       android:padding="15dp"
+       android:layout_marginStart="10dp"
+       android:layout_marginEnd="10dp"
+       android:id="@+id/ed1"></EditText>
+
+</LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical"
+     android:layout_below="@id/liner1"
+     android:id="@+id/liner2"
+     >
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text=" Enter Elemnt Of Matrix Two With space between numbers "
+         android:textColor="@color/white"
+         android:textStyle="bold"
+         android:textSize="16sp"
+         android:layout_marginTop="15dp"
+         android:background="@drawable/textview"
+         android:layout_marginEnd="10dp"
+         android:layout_marginStart="10dp"
+         android:padding="20sp"
+         android:id="@+id/te2"></TextView>
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="150dp"
+         android:hint="1 2 3 , 4 5 6"
+         android:layout_marginTop="10dp"
+         android:background="@drawable/ed"
+         android:padding="15dp"
+         android:layout_marginStart="10dp"
+         android:layout_marginEnd="10dp"
+         android:id="@+id/ed2"></EditText>
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+      <Button
+          android:layout_width="150dp"
+          android:layout_height="wrap_content"
+          android:text="sum"
+          android:textStyle="bold"
+          android:layout_marginTop="10dp"
+          android:padding="20sp"
+          android:id="@+id/sum"
+          android:layout_marginStart="15dp"
+          ></Button>
+     <Button
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:text="multiply"
+         android:textStyle="bold"
+         android:layout_marginTop="10dp"
+         android:padding="20sp"
+
+         android:id="@+id/mult"
+
+         android:layout_marginLeft="20dp"
+
+         ></Button>
+
+     </LinearLayout>
+ </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/textview"
+        android:layout_below="@id/liner2"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="20sp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:id="@+id/result"
+        ></TextView>
+
+
+
+</RelativeLayout>
